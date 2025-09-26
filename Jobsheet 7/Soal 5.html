@@ -1,0 +1,94 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Website Firman Ganteng</title>
+        <style>
+            body {
+                background: #f4f4f4;
+                font-family: Arial, sans-serif;
+            }
+            .container {
+                width: 800px;
+                margin: auto;
+                border: 5px solid white;
+            }
+            .header {
+                background: orange;
+                text-align: center;
+                padding: 10px;
+                font-size: 28px;
+                font-weight: bold;
+            }
+            .content {
+                display: flex;
+                min-height: 300px;
+            }
+            .menu {
+                width: 200px;
+                background: gold;
+                padding: 10px;
+            }
+            .menu b {
+                display: block;
+                margin-bottom: 10px;
+            }
+            .menu a {
+                display: block;
+                text-decoration: none;
+                color: blue;
+                margin-bottom: 5px;
+            }
+            .menu a:hover {
+                text-decoration: underline;
+            }
+            .main {
+                flex: 1;
+                background: #eee;
+                padding: 10px;
+            }
+            .footer {
+                background: orange;
+                text-align: center;
+                padding: 5px;
+                font-size: 14px;
+            }
+        </style>
+        <script>
+            function showContent(no) {
+                let konten = document.getElementById("mainContent");
+                if (no === 1) {
+                    konten.innerHTML = "Jawaban NO 1";
+                } else if (no === 2) {
+                    konten.innerHTML = "Jawaban NO 2";
+                } else if (no === 3) {
+                    konten.innerHTML = "Jawaban NO 3";
+                } else if (no === 4) {
+                    konten.innerHTML = "Jawaban NO 4";
+                } else {
+                    konten.innerHTML = "Content wILL Goes Here";
+                }
+            }
+        </script>
+    </head>
+        <div class="container">
+            <div class="header">WEBSITE RIZKY FIRMANSYAH</div>
+            <div class="content">
+                <div class="menu">
+                    <b>Menu</b>
+                    <a href="#" onclick="showContent(1)">Jawaban Tugas Individu 1</a>
+                    <a href="#" onclick="showContent(2)">Jawaban Tugas Individu 2</a>
+                    <a href="#" onclick="showContent(3)">Jawaban Tugas Individu 3</a>
+                    <a href="#" onclick="showContent(4)">Jawaban Tugas Individu 4</a>
+                </div>
+                <div class="main" id="mainContent">
+                    Content will goes here
+                </div>
+            </div>
+            <div class="footer">Copyright FIRMAN </div>
+        </div>
+        <h1 style="text-align: center; color: red; "  >IZIN PAKE JS PAKK!!</h1>
+
+    </body>
+    </html>
