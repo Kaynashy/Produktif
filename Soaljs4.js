@@ -1,0 +1,13 @@
+console.log("Operasi Artimatika JavaScript (FirmanGanteng)");
+var a=10;
+var b=5;
+var kalian=a*b;
+var pembagian=a/b;   
+var pengurangan=a-b;
+var penjumlahan=a+b;
+var modolus=a%b;
+console.log("Hasil Perkalian 10*5= "+kalian);
+console.log("Hasil Pembagian 10/5 = "+pembagian);
+console.log("Hasil Pengurangan 10-5 = "+pengurangan);
+console.log("Hasil Penjumlahan 10+5 = "+penjumlahan);
+console.log("Hasil Modolus 10%5 = "+modolus);
